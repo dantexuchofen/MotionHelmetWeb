@@ -1,0 +1,7 @@
+PUNTO 6. CREACIÓN DE UN LOGO
+
+Prompt:
+Diseña un concepto de logo para MotionHelmet. El proyecto es un casco inteligente para ciclistas urbanos que activa luces direccionales mediante movimientos de inclinación y utiliza una luz central roja para representar frenado o detención. Público: ciclistas urbanos, estudiantes y repartidores. Valores: innovación, visibilidad y movilidad responsable. Estilo: minimalista, tecnológico, deportivo, reconocible y legible. Paleta: azul oscuro, verde turquesa, blanco y un pequeño acento amarillo ámbar. Integra de forma simple la letra M, líneas de movimiento y una referencia sutil al casco o a la señalización. Evita exceso de detalles, degradados complejos, tipografías poco legibles, símbolos de marcas existentes y afirmaciones relacionadas con seguridad garantizada. Propón una versión principal horizontal con el nombre MotionHelmet y una versión simplificada para favicon, aplicación y redes sociales. Fondo transparente cuando sea posible. El ejercicio es conceptual y no implica que el resultado sea registrable como marca.
+
+Aplicación:
+La versión principal se utiliza en la cabecera. La versión simplificada se utiliza como favicon y en el pie de página.

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MotionHelmet, casco inteligente para ciclistas con luces direccionales controladas mediante inclinación.">
+  <title>MotionHelmet | Movilidad inteligente</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="logo" href="#inicio" aria-label="MotionHelmet, ir al inicio">
+        <span class="logo-icon">➤</span>
+        <span>MotionHelmet</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#funcionamiento">Funcionamiento</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="tag">🚲 Movilidad inteligente</span>
+          <h1>Tu movimiento se convierte en una <span>señal visible</span></h1>
+          <p>Casco inteligente que detecta inclinaciones previamente configuradas y activa luces direccionales para facilitar la señalización del ciclista durante sus recorridos.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Quiero conocer más</a>
+            <a class="btn btn-secondary" href="#funcionamiento">Ver cómo funciona</a>
+          </div>
+          <a class="discover" href="#beneficios">Descubrir beneficios ↓</a>
+        </div>
+
+        <div class="helmet-scene" role="img" aria-label="Representación de casco inteligente con luces direccionales">
+          <span class="direction direction-left">←</span>
+          <div class="helmet">
+            <div class="sensor"></div>
+            <div class="light light-1"></div>
+            <div class="light light-2"></div>
+            <div class="light light-3"></div>
+            <div class="visor"></div>
+          </div>
+          <span class="direction direction-right">→</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="value">
+      <div class="container value-content">
+        <span class="section-label light">Propuesta de valor</span>
+        <h2>Señaliza sin apartar las manos del manubrio</h2>
+        <p>MotionHelmet combina sensores de inclinación y luces direccionales en una experiencia sencilla, tecnológica y orientada a la movilidad urbana.</p>
+      </div>
+    </section>
+
+    <section class="section" id="beneficios">
+      <div class="container">
+        <header class="section-heading">
+          <span class="section-label">Beneficios principales</span>
+          <h2>Pensado para cada recorrido</h2>
+          <p>Una propuesta enfocada en visibilidad, interacción sencilla y movilidad urbana.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <span class="card-icon">◉</span>
+            <h3>Mayor visibilidad</h3>
+            <p>Las luces direccionales ayudan a comunicar los giros, especialmente de noche o en vías congestionadas.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon">↔</span>
+            <h3>Control por inclinación</h3>
+            <p>Los sensores reconocen movimientos previamente configurados y activan la señal correspondiente.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon">◇</span>
+            <h3>Movilidad intuitiva</h3>
+            <p>Integra detección de movimiento e iluminación en una solución orientada al ciclismo urbano.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section operation" id="funcionamiento">
+      <div class="container">
+        <header class="section-heading">
+          <span class="section-label">Funcionamiento</span>
+          <h2>De la inclinación a la señal</h2>
+        </header>
+
+        <div class="steps">
+          <article class="step"><span>1</span><div><h3>Detecta</h3><p>Los sensores registran un movimiento de inclinación previamente configurado.</p></div></article>
+          <article class="step"><span>2</span><div><h3>Interpreta</h3><p>El sistema procesa el movimiento y reconoce la dirección asociada.</p></div></article>
+          <article class="step"><span>3</span><div><h3>Señaliza</h3><p>Las luces correspondientes se activan para comunicar visualmente la intención de giro.</p></div></article>
+        </div>
+
+        <aside class="notice">
+          <strong>Uso responsable:</strong> MotionHelmet es un producto complementario a las medidas de conducción responsable. No sustituye la atención del ciclista, el cumplimiento de las normas viales, las señales correspondientes ni el uso de implementos de protección certificados.
+        </aside>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container contact-grid">
+        <div>
+          <span class="section-label light">Mantente informado</span>
+          <h2>Conoce el desarrollo de MotionHelmet</h2>
+          <p>Recibe novedades sobre el concepto, sus características y futuras pruebas del proyecto.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label for="email">Correo electrónico</label>
+          <div class="form-row">
+            <input type="email" id="email" placeholder="ciclista@correo.com" required>
+            <button class="btn btn-accent" type="submit">Quiero novedades</button>
+          </div>
+          <small id="formMessage">Formulario demostrativo para la presentación académica.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 MotionHelmet. Proyecto académico conceptual.</p>
+      <p>Tecnología, visibilidad y movilidad.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+<a class="version-arrow version-prev" href="../v1%20Creacion/index.html" aria-label="Volver a la versión 1">←</a><a class="version-arrow" href="../v3%20Creacion%20articulo%20corto/index.html" aria-label="Ir a la versión 3">→</a>
+</body>
+</html>

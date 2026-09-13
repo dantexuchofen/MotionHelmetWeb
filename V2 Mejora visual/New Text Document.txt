@@ -1,0 +1,212 @@
+import React from "react";
+import { Bike, ChevronDown, Eye, Menu, Move3D, Navigation, ShieldCheck, X } from "lucide-react";
+import { motion } from "framer-motion";
+
+export default function MotionHelmetWebsite() {
+  const [menuAbierto, setMenuAbierto] = React.useState(false);
+
+  const irASeccion = (id) => {
+    const elemento = document.getElementById(id);
+    if (elemento) {
+      elemento.scrollIntoView({ behavior: "smooth", block: "start" });
+      setMenuAbierto(false);
+    }
+  };
+
+  const enlaces = [
+    { nombre: "Inicio", id: "inicio" },
+    { nombre: "Beneficios", id: "beneficios" },
+    { nombre: "Funcionamiento", id: "funcionamiento" },
+    { nombre: "Contacto", id: "contacto" },
+  ];
+
+  const beneficios = [
+    {
+      icono: Eye,
+      titulo: "Mayor visibilidad",
+      texto: "Las luces direccionales ayudan a comunicar los giros, especialmente de noche o en vías congestionadas.",
+    },
+    {
+      icono: Move3D,
+      titulo: "Control por inclinación",
+      texto: "Los sensores reconocen movimientos previamente configurados y activan la señal correspondiente.",
+    },
+    {
+      icono: Bike,
+      titulo: "Movilidad intuitiva",
+      texto: "Integra detección de movimiento e iluminación en una solución orientada al ciclismo urbano.",
+    },
+  ];
+
+  return (
+    <div className="min-h-screen scroll-smooth bg-[#f4f7f8] font-sans text-[#263b4a] selection:bg-[#9fd5cd] selection:text-[#102b3a]">
+      <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 shadow-sm backdrop-blur">
+        <nav className="mx-auto flex min-h-20 max-w-7xl items-center justify-between px-5 sm:px-8" aria-label="Navegación principal">
+          <button
+            onClick={() => irASeccion("inicio")}
+            className="flex items-center gap-3 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[#11766f] focus-visible:ring-offset-4"
+            aria-label="Ir al inicio"
+          >
+            <span className="grid h-11 w-11 place-items-center rounded-2xl rounded-bl-md bg-[#11766f] text-white shadow-sm">
+              <Navigation size={22} aria-hidden="true" />
+            </span>
+            <span className="text-lg font-black tracking-tight text-[#102b3a] sm:text-xl">MotionHelmet</span>
+          </button>
+
+          <div className="hidden items-center gap-2 md:flex">
+            {enlaces.map((enlace) => (
+              <button
+                key={enlace.id}
+                onClick={() => irASeccion(enlace.id)}
+                className="rounded-xl px-4 py-2.5 text-sm font-bold text-[#334e5e] transition hover:bg-[#e7f1f0] hover:text-[#0b625d] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#11766f]"
+              >
+                {enlace.nombre}
+              </button>
+            ))}
+          </div>
+
+          <button
+            className="grid h-11 w-11 place-items-center rounded-xl border border-slate-300 bg-white text-[#102b3a] shadow-sm md:hidden"
+            onClick={() => setMenuAbierto(!menuAbierto)}
+            aria-expanded={menuAbierto}
+            aria-label={menuAbierto ? "Cerrar menú" : "Abrir menú"}
+          >
+            {menuAbierto ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </nav>
+
+        {menuAbierto && (
+          <div className="border-t border-slate-200 bg-white px-5 py-4 shadow-lg md:hidden">
+            <div className="mx-auto grid max-w-7xl gap-2">
+              {enlaces.map((enlace) => (
+                <button
+                  key={enlace.id}
+                  onClick={() => irASeccion(enlace.id)}
+                  className="rounded-xl px-4 py-3 text-left font-bold text-[#243f50] transition hover:bg-[#e7f1f0]"
+                >
+                  {enlace.nombre}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+      </header>
+
+      <main>
+        <section id="inicio" className="scroll-mt-24 overflow-hidden bg-[radial-gradient(circle_at_85%_20%,rgba(17,118,111,0.15),transparent_27%),linear-gradient(135deg,#ffffff_0%,#eef4f5_100%)]">
+          <div className="mx-auto grid min-h-[calc(100vh-5rem)] max-w-7xl items-center gap-14 px-5 py-20 sm:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:py-24">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center lg:text-left">
+              <span className="inline-flex items-center gap-2 rounded-full bg-[#dcefeb] px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-[#0b625d]">
+                <Bike size={16} /> Movilidad inteligente
+              </span>
+              <h1 className="mt-6 max-w-3xl text-4xl font-black leading-[1.04] tracking-[-0.04em] text-[#102b3a] sm:text-6xl lg:text-7xl">
+                Tu movimiento se convierte en una <span className="text-[#0b6c66]">señal visible</span>
+              </h1>
+              <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-[#4b6473] sm:text-lg lg:mx-0">
+                Casco inteligente que detecta inclinaciones previamente configuradas y activa luces direccionales para facilitar la señalización del ciclista durante sus recorridos.
+              </p>
+              <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
+                <button onClick={() => irASeccion("contacto")} className="min-h-13 rounded-xl bg-[#0b625d] px-7 py-3.5 font-extrabold text-white shadow-lg shadow-[#0b625d]/20 transition hover:bg-[#084e4a] focus:outline-none focus-visible:ring-4 focus-visible:ring-[#69bcb4]">
+                  Quiero conocer más
+                </button>
+                <button onClick={() => irASeccion("funcionamiento")} className="min-h-13 rounded-xl border-2 border-[#183d50] bg-white px-7 py-3 font-extrabold text-[#183d50] transition hover:bg-[#183d50] hover:text-white focus:outline-none focus-visible:ring-4 focus-visible:ring-slate-300">
+                  Ver cómo funciona
+                </button>
+              </div>
+              <button onClick={() => irASeccion("beneficios")} className="mx-auto mt-10 flex items-center gap-2 text-sm font-bold text-[#49616f] hover:text-[#0b625d] lg:mx-0">
+                Descubrir beneficios <ChevronDown size={17} />
+              </button>
+            </motion.div>
+
+            <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7, delay: 0.15 }} className="flex justify-center" aria-label="Representación gráfica de un casco inteligente con luces direccionales">
+              <div className="relative grid aspect-square w-full max-w-[390px] place-items-center rounded-full border-[14px] border-[#b9dad5] bg-[#102b3a] shadow-2xl shadow-[#102b3a]/20 sm:border-[18px]">
+                <div className="absolute left-5 text-4xl font-black text-[#dfad3b] sm:left-8 sm:text-5xl" aria-hidden="true">←</div>
+                <div className="absolute right-5 text-4xl font-black text-[#dfad3b] sm:right-8 sm:text-5xl" aria-hidden="true">→</div>
+                <div className="relative h-[125px] w-[180px] -rotate-3 rounded-[90px_90px_34px_34px] border-[7px] border-[#071c27] bg-gradient-to-br from-[#f0f4f5] to-[#91a9b5] sm:h-[155px] sm:w-[220px]">
+                  <div className="absolute -right-6 bottom-5 h-11 w-24 rounded-[10px_30px_16px_10px] bg-[#071c27] sm:h-12 sm:w-28" />
+                  {[38, 63, 88].map((top) => (
+                    <div key={top} className="absolute left-7 h-3 w-12 rounded-full bg-[#dfad3b] shadow-[0_0_15px_rgba(223,173,59,0.75)] sm:left-9 sm:w-14" style={{ top }} />
+                  ))}
+                  <div className="absolute left-1/2 top-5 h-4 w-4 -translate-x-1/2 rounded-full border-4 border-[#0b625d] bg-[#b9dad5]" />
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        <section className="bg-[#102b3a] px-5 py-16 text-center text-white sm:px-8 sm:py-20">
+          <div className="mx-auto max-w-4xl">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#83c8bf]">Propuesta de valor</p>
+            <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-5xl">Señaliza sin apartar las manos del manubrio</h2>
+            <p className="mx-auto mt-5 max-w-3xl leading-8 text-slate-300">MotionHelmet combina sensores de inclinación y luces direccionales en una experiencia sencilla, tecnológica y orientada a la movilidad urbana.</p>
+          </div>
+        </section>
+
+        <section id="beneficios" className="scroll-mt-20 px-5 py-20 sm:px-8 sm:py-28">
+          <div className="mx-auto max-w-7xl">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-[#0b6c66]">Beneficios principales</p>
+              <h2 className="mt-3 text-3xl font-black tracking-tight text-[#102b3a] sm:text-5xl">Pensado para cada recorrido</h2>
+              <p className="mt-5 leading-8 text-[#58707e]">Una propuesta enfocada en visibilidad, interacción sencilla y movilidad urbana.</p>
+            </div>
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {beneficios.map(({ icono: Icono, titulo, texto }, index) => (
+                <motion.article key={titulo} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }} className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_12px_35px_rgba(16,43,58,0.07)]">
+                  <div className="grid h-14 w-14 place-items-center rounded-2xl bg-[#dcefeb] text-[#0b625d]"><Icono size={27} /></div>
+                  <h3 className="mt-6 text-xl font-black text-[#102b3a]">{titulo}</h3>
+                  <p className="mt-3 leading-7 text-[#58707e]">{texto}</p>
+                </motion.article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="funcionamiento" className="scroll-mt-20 bg-white px-5 py-20 sm:px-8 sm:py-28">
+          <div className="mx-auto max-w-7xl">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-[#0b6c66]">Funcionamiento</p>
+              <h2 className="mt-3 text-3xl font-black tracking-tight text-[#102b3a] sm:text-5xl">De la inclinación a la señal</h2>
+            </div>
+            <div className="mt-12 grid gap-5 lg:grid-cols-3">
+              {[
+                ["1", "Detecta", "Los sensores registran un movimiento de inclinación previamente configurado."],
+                ["2", "Interpreta", "El sistema procesa el movimiento y reconoce la dirección asociada."],
+                ["3", "Señaliza", "Las luces correspondientes se activan para comunicar visualmente la intención de giro."],
+              ].map(([numero, titulo, texto]) => (
+                <article key={numero} className="flex gap-5 rounded-3xl bg-[#f0f5f5] p-7 sm:p-8">
+                  <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-[#c9952e] font-black text-[#102b3a]">{numero}</span>
+                  <div><h3 className="text-xl font-black text-[#102b3a]">{titulo}</h3><p className="mt-2 leading-7 text-[#58707e]">{texto}</p></div>
+                </article>
+              ))}
+            </div>
+            <div className="mx-auto mt-10 flex max-w-4xl items-start gap-4 rounded-2xl border-l-4 border-[#c9952e] bg-[#fbf5e8] p-5 text-[#334e5e]">
+              <ShieldCheck className="mt-0.5 shrink-0 text-[#9a6b16]" aria-hidden="true" />
+              <p className="text-sm leading-6"><strong>Uso responsable:</strong> MotionHelmet es un producto complementario a las medidas de conducción responsable. No sustituye la atención del ciclista, el cumplimiento de las normas viales, las señales correspondientes ni el uso de implementos de protección certificados.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contacto" className="scroll-mt-20 bg-[#102b3a] px-5 py-20 text-white sm:px-8 sm:py-24">
+          <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2 lg:gap-20">
+            <div><p className="text-xs font-black uppercase tracking-[0.18em] text-[#83c8bf]">Mantente informado</p><h2 className="mt-3 text-3xl font-black tracking-tight sm:text-5xl">Conoce el desarrollo de MotionHelmet</h2><p className="mt-5 max-w-xl leading-8 text-slate-300">Recibe novedades sobre el concepto, sus características y futuras pruebas del proyecto.</p></div>
+            <form className="rounded-3xl bg-white/8 p-6 ring-1 ring-white/15 sm:p-8" onSubmit={(e) => e.preventDefault()}>
+              <label htmlFor="correo" className="block text-sm font-bold">Correo electrónico</label>
+              <div className="mt-3 flex flex-col gap-3 sm:flex-row">
+                <input id="correo" type="email" placeholder="ciclista@correo.com" required className="min-h-13 min-w-0 flex-1 rounded-xl border-2 border-transparent bg-white px-4 text-[#102b3a] outline-none placeholder:text-slate-400 focus:border-[#69bcb4]" />
+                <button type="submit" className="min-h-13 rounded-xl bg-[#c9952e] px-6 font-black text-[#102b3a] transition hover:bg-[#b68125] focus:outline-none focus-visible:ring-4 focus-visible:ring-[#e9cb83]">Quiero novedades</button>
+              </div>
+              <p className="mt-3 text-xs leading-5 text-slate-400">Formulario demostrativo para la presentación académica del proyecto.</p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer className="border-t border-white/10 bg-[#071c27] px-5 py-8 text-slate-400 sm:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-center text-sm sm:flex-row sm:text-left">
+          <p>© 2026 MotionHelmet. Proyecto académico conceptual.</p>
+          <p>Tecnología, visibilidad y movilidad.</p>
+        </div>
+      </footer>
+    </div>
+  );
+}

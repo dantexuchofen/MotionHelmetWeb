@@ -1,0 +1,16 @@
+PUNTO 10. CREACIÓN DE MÚSICA
+
+Herramienta utilizada:
+Generación musical digital asistida por IA y síntesis programática original.
+
+Prompt utilizado:
+Crea una pieza musical instrumental original de aproximadamente 40 segundos para MotionHelmet. Se utilizará como música de fondo en una presentación académica y en un video promocional del proyecto. Debe transmitir innovación, movimiento, confianza y movilidad urbana.
+
+Utiliza un estilo electrónico, tecnológico y urbano, con un ritmo dinámico y moderno. Instrumentación: sintetizadores ambientales, arpegios electrónicos, bajo sintetizado, percusión digital, bombo electrónico, caja procesada, hi-hats y efectos de transición sutiles.
+
+Estructura: comienza de forma suave y atmosférica durante los primeros segundos; incorpora progresivamente el pulso, el bajo y la percusión; alcanza una sección central con mayor energía y sensación de movimiento; termina reduciendo los elementos y realizando un cierre limpio, breve y definido.
+
+La música debe funcionar como fondo y no competir con una narración o con el contenido visual. Mantén una energía positiva y controlada, con una mezcla clara, moderna y profesional. No incluyas voces, letras, coros, sonidos de tráfico, bocinas, frenadas, accidentes ni referencias directas a canciones, melodías o artistas específicos. El resultado debe ser original y coherente con la identidad tecnológica, minimalista, deportiva y urbana de MotionHelmet.
+
+Duración aproximada: 40 segundos.
+Formato sugerido: estéreo, WAV y MP3.

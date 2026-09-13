@@ -1,0 +1,7 @@
+PUNTO 4. GENERACIÓN DE UNA IMAGEN CON CHATGPT
+
+Prompt propuesto:
+Genera una imagen para MotionHelmet. Debe representar un casco inteligente para ciclistas con sensores de inclinación y luces direccionales, utilizado en una vía urbana durante el atardecer o la noche. Está dirigida a ciclistas urbanos, estudiantes y repartidores. Composición: vista posterior y ligeramente lateral del ciclista, con el casco como elemento principal, luces ámbar visibles y una flecha direccional integrada de forma sutil; fondo urbano desenfocado para mantener el foco en el producto. Estilo visual: tecnológico, minimalista, deportivo, realista y preventivo. Paleta: azul oscuro, negro, verde turquesa y amarillo ámbar. Iluminación: nocturna suave, con contraste suficiente para destacar el casco sin colores excesivamente brillantes. Formato: horizontal 16:9, adecuado para la cabecera de una página web. Evita accidentes, conducción peligrosa, logotipos de terceros, texto ilegible, componentes imposibles, exceso de luces, colores neón intensos y afirmaciones visuales de seguridad garantizada. La imagen debe transmitir innovación, visibilidad, control y movilidad responsable.
+
+Uso en la web:
+La imagen se incorporó en la cabecera y en una sección conceptual. Se acompaña de una nota que aclara que no representa un producto validado ni una garantía de seguridad.

@@ -2,6 +2,8 @@
 
 /* Restauración de la presentación original de Redes */
 .social-layout{display:grid;grid-template-columns:minmax(300px,580px) 1fr;gap:38px;align-items:start}
+.version-arrow{position:fixed;right:22px;top:50%;z-index:25;display:grid;place-items:center;width:48px;height:48px;border:1px solid #ffffff55;border-radius:50%;background:var(--t);color:white;font-size:2rem;line-height:1;box-shadow:0 8px 20px #071d2b33;transform:translateY(-50%);transition:transform .2s,background .2s}
+.version-arrow:hover{background:#087d75;transform:translate(3px,-50%)}
 .post{overflow:hidden;background:white;color:var(--text);border-radius:20px;box-shadow:0 25px 60px #0007}
 .post-head{display:flex;align-items:center;gap:12px;padding:15px}
 .post-head img{width:46px;height:46px;object-fit:cover;border-radius:50%}
@@ -16,3 +18,4 @@
 .academic{margin-top:20px;padding:17px;color:#473a16;background:#fff6df;border-left:5px solid var(--a);border-radius:10px;font-size:.85rem}
 @media(max-width:1000px){.social-layout{grid-template-columns:1fr}}
 @media(max-width:560px){.post-actions span{display:none}}
+@media(max-width:560px){.version-arrow{right:12px;width:42px;height:42px;font-size:1.7rem}}

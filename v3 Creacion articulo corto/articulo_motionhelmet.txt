@@ -1,0 +1,17 @@
+PUNTO 2. CREACIÓN DE UN ARTÍCULO CORTO
+
+Prompt utilizado:
+Redacta un artículo corto de 200 palabras sobre el uso de un casco inteligente con control por inclinación para la señalización de ciclistas. El público es ciclistas urbanos, estudiantes y repartidores. Relaciónalo con la poca visibilidad de las señales manuales y la propuesta de activar luces direccionales mediante inclinaciones configuradas. Usa un tono tecnológico, minimalista, deportivo y preventivo, un título atractivo y un cierre con llamada a la acción. Evita afirmaciones que no puedan justificarse.
+
+Título:
+MotionHelmet: una nueva forma de señalizar sobre dos ruedas
+
+Artículo (188 palabras):
+
+Moverse en bicicleta por la ciudad exige atención constante. Al acercarse a una intersección o prepararse para girar, el ciclista necesita comunicar su intención a conductores y peatones. Sin embargo, las señales manuales pueden ser menos visibles durante la noche, bajo condiciones de tránsito intenso o cuando el entorno demanda mantener un mayor control del manubrio.
+
+MotionHelmet propone una alternativa complementaria: un casco inteligente que reconoce movimientos de inclinación previamente configurados y activa luces direccionales. Así, un gesto sencillo se transforma en una señal luminosa que ayuda a hacer más clara la intención de giro. Su propuesta integra sensores e iluminación en un accesorio pensado para ciclistas urbanos, estudiantes y repartidores que recorren la ciudad diariamente.
+
+La novedad está en una interacción intuitiva que evita depender de un control manual adicional. El sistema detecta, interpreta y señaliza, manteniendo una experiencia tecnológica, deportiva y fácil de comprender. MotionHelmet no reemplaza las señales viales, la atención permanente ni los equipos de protección certificados. Su función es acompañar las prácticas de conducción responsable.
+
+Conoce MotionHelmet y descubre cómo la tecnología puede contribuir a una movilidad urbana más visible, conectada y consciente.
